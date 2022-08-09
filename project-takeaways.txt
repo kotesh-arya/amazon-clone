@@ -1,0 +1,12 @@
+Project amazon clone building takeaways :
+1) BEM - Block Element Modifier
+2) mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));--->(used for the home page banner fading down effect)
+3).login__container > form > h5  (targetting nested multiple specified elements).
+4)Javascript-trick: 
+           {Array(intezer)
+            .fill()
+            .map((_, index) => (<p key={index}>⭐</p>))}
+                
+5)useEffect comes really handy when re-writing classbased-components to functionbased-components.
+6)Data-layer : Basically a data-context we create using the useContext hook and provide over the app component in the index.js file.No by using the useReducer hook we trigger dispath and shoot objects to the data layer when the user interacts with the app.This data layer gets updated with every diapatch trigger, and the reducer basically updates the data layer based on the action.type property and uses the data from the action.payload and does the actual updating the Data-layer(state).
+7)Hoisting using Firebase.
